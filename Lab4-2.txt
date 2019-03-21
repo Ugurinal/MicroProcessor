@@ -1,0 +1,16 @@
+MOV [1000h], 5E00h 
+MOV [1002h], 0B2D0h
+MOV [1004h], 0CA00h
+MOV [1006h], 3B9Ah
+
+CLC
+MOV AX, [1000h]
+SUB AX, [1004h]
+
+MOV BX, [1002h]
+SBB BX, [1006h]
+
+MOV [1008h], AX
+MOV [100Ah], BX
+
+RET                                           
