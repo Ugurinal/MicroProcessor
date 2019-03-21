@@ -3,7 +3,7 @@ MOV [1002h], 0B2D0h
 MOV [1004h], 0CA00h
 MOV [1006h], 3B9Ah
 
-
+CLC
 MOV AX, [1000h]
 ADD AX, [1004h]
 
